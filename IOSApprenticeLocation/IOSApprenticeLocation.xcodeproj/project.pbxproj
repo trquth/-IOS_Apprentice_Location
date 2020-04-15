@@ -11,6 +11,8 @@
 		6E50472A2444C9CA00C3790C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5047292444C9CA00C3790C /* LocationCell.swift */; };
 		6E5D505424460BA5005C6707 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5D505324460BA5005C6707 /* MapKit.framework */; };
 		6E5D505624460BEE005C6707 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D505524460BEE005C6707 /* MapVC.swift */; };
+		6E609AB324475636008EE278 /* String+RandomWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E609AB224475636008EE278 /* String+RandomWord.swift */; };
+		6E609AB524475684008EE278 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E609AB424475684008EE278 /* UIImage+Resize.swift */; };
 		6E8128E12441C78E00D8C0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8128E02441C78E00D8C0F4 /* AppDelegate.swift */; };
 		6E8128E32441C78E00D8C0F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8128E22441C78E00D8C0F4 /* SceneDelegate.swift */; };
 		6E8128E52441C78E00D8C0F4 /* CurrentLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8128E42441C78E00D8C0F4 /* CurrentLocationVC.swift */; };
@@ -31,6 +33,8 @@
 		6E5047292444C9CA00C3790C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		6E5D505324460BA5005C6707 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6E5D505524460BEE005C6707 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		6E609AB224475636008EE278 /* String+RandomWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RandomWord.swift"; sourceTree = "<group>"; };
+		6E609AB424475684008EE278 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		6E8128DD2441C78E00D8C0F4 /* IOSApprenticeLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSApprenticeLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8128E02441C78E00D8C0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E8128E22441C78E00D8C0F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				6E5047272444C8C100C3790C /* LocationsVC.swift */,
 				6E5047292444C9CA00C3790C /* LocationCell.swift */,
 				6E5D505524460BEE005C6707 /* MapVC.swift */,
+				6E609AB224475636008EE278 /* String+RandomWord.swift */,
+				6E609AB424475684008EE278 /* UIImage+Resize.swift */,
 			);
 			path = IOSApprenticeLocation;
 			sourceTree = "<group>";
@@ -188,9 +194,11 @@
 				6E9A11A624436A9600B9695A /* Location+CoreDataProperties.swift in Sources */,
 				6E9A119F2443664700B9695A /* Functions.swift in Sources */,
 				6E50472A2444C9CA00C3790C /* LocationCell.swift in Sources */,
+				6E609AB524475684008EE278 /* UIImage+Resize.swift in Sources */,
 				6E8128F5244230E400D8C0F4 /* LocationDetailsVC.swift in Sources */,
 				6E9A11A524436A9600B9695A /* Location+CoreDataClass.swift in Sources */,
 				6E8128E32441C78E00D8C0F4 /* SceneDelegate.swift in Sources */,
+				6E609AB324475636008EE278 /* String+RandomWord.swift in Sources */,
 				6E9A11972442DFD200B9695A /* CategoryPickerVC.swift in Sources */,
 				6E5047282444C8C100C3790C /* LocationsVC.swift in Sources */,
 			);

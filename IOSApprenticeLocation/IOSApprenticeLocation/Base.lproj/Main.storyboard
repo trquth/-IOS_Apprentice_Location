@@ -173,14 +173,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-yA-cxK">
-                                                    <rect key="frame" x="20" y="11" width="81" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-yA-cxK">
+                                                    <rect key="frame" x="20" y="11" width="81" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F9i-B9-yb0">
+                                                    <rect key="frame" x="111" y="11" width="272" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="AWh-V6-8Ln"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F9i-B9-yb0" firstAttribute="leading" secondItem="Sgn-yA-cxK" secondAttribute="trailing" constant="10" id="B9a-bb-Kx7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Sgn-yA-cxK" secondAttribute="bottom" constant="0.5" id="Bm6-YD-mRM"/>
+                                                <constraint firstItem="F9i-B9-yb0" firstAttribute="centerY" secondItem="p31-Pd-GSJ" secondAttribute="centerY" id="Sez-Rn-cqz"/>
+                                                <constraint firstAttribute="trailing" secondItem="F9i-B9-yb0" secondAttribute="trailing" id="kWA-p0-mgd"/>
+                                                <constraint firstItem="Sgn-yA-cxK" firstAttribute="top" secondItem="p31-Pd-GSJ" secondAttribute="topMargin" id="l2R-gn-rfi"/>
+                                                <constraint firstItem="Sgn-yA-cxK" firstAttribute="leading" secondItem="p31-Pd-GSJ" secondAttribute="leadingMargin" id="tDc-A7-TXZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -314,6 +327,8 @@
                         <outlet property="categoryLabel" destination="54D-wG-JHa" id="pC9-WM-HzP"/>
                         <outlet property="dateLabel" destination="SQh-Vo-JuR" id="Lrb-5E-Asj"/>
                         <outlet property="descriptionTextView" destination="P1c-ki-K9d" id="23U-Xx-y9Y"/>
+                        <outlet property="imageHeight" destination="AWh-V6-8Ln" id="3uH-K9-YCW"/>
+                        <outlet property="imageView" destination="F9i-B9-yb0" id="VJW-hI-FKA"/>
                         <outlet property="latitudeLabel" destination="T54-zj-7p2" id="FC6-md-S19"/>
                         <outlet property="longitudeLabel" destination="kyJ-Gc-fjo" id="M4s-TG-4ic"/>
                     </connections>
@@ -401,30 +416,40 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuG-Ic-0DA">
-                                            <rect key="frame" x="20" y="36" width="374" height="17"/>
+                                            <rect key="frame" x="70" y="36" width="324" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O36-RE-933">
-                                            <rect key="frame" x="20" y="5" width="374" height="21"/>
+                                            <rect key="frame" x="70" y="5" width="324" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oFA-GS-Y1B">
+                                            <rect key="frame" x="10" y="4" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="S1K-Df-RQW"/>
+                                                <constraint firstAttribute="width" constant="50" id="y07-2C-af4"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="O36-RE-933" secondAttribute="trailing" constant="20" id="EIe-8d-0Ab"/>
+                                        <constraint firstItem="oFA-GS-Y1B" firstAttribute="trailing" secondItem="O36-RE-933" secondAttribute="leading" constant="-10" id="Edx-cg-QFW"/>
+                                        <constraint firstItem="oFA-GS-Y1B" firstAttribute="centerY" secondItem="QgA-qb-rxh" secondAttribute="centerY" id="Gc5-jp-3Oj"/>
                                         <constraint firstItem="O36-RE-933" firstAttribute="top" secondItem="QgA-qb-rxh" secondAttribute="top" constant="5" id="GoF-hK-yKu"/>
                                         <constraint firstAttribute="trailing" secondItem="ZuG-Ic-0DA" secondAttribute="trailing" constant="20" id="I4f-sR-d31"/>
-                                        <constraint firstItem="ZuG-Ic-0DA" firstAttribute="leading" secondItem="QgA-qb-rxh" secondAttribute="leading" constant="20" id="Msl-Yk-VHD"/>
-                                        <constraint firstItem="O36-RE-933" firstAttribute="leading" secondItem="QgA-qb-rxh" secondAttribute="leading" constant="20" id="t5D-GK-RGd"/>
+                                        <constraint firstItem="ZuG-Ic-0DA" firstAttribute="leading" secondItem="O36-RE-933" secondAttribute="leading" id="h5o-o6-sbf"/>
+                                        <constraint firstItem="oFA-GS-Y1B" firstAttribute="leading" secondItem="QgA-qb-rxh" secondAttribute="leading" constant="10" id="iQt-FT-vJU"/>
                                         <constraint firstAttribute="bottom" secondItem="ZuG-Ic-0DA" secondAttribute="bottom" constant="5" id="tUy-dG-Crg"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="ZuG-Ic-0DA" id="3vp-Mx-bhb"/>
                                     <outlet property="descriptionLabel" destination="O36-RE-933" id="s5p-5t-lGi"/>
+                                    <outlet property="photoImageView" destination="oFA-GS-Y1B" id="bMs-YY-pZj"/>
                                     <segue destination="FAo-bO-qnU" kind="show" identifier="EditLocation" id="sPR-NV-7F6"/>
                                 </connections>
                             </tableViewCell>
@@ -541,6 +566,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="si5-EJ-7nc"/>
+        <segue reference="sPR-NV-7F6"/>
     </inferredMetricsTieBreakers>
 </document>
